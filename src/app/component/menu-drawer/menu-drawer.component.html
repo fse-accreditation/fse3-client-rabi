@@ -1,0 +1,18 @@
+  <mat-grid-list cols="1" rowHeight="50px" *ngIf="isAuthenticateUser">
+    <mat-grid-tile>
+      <button mat-stroked-button color="primary" routerLink="/product-bid/search" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}" >
+        <mat-icon>search</mat-icon>
+        <span class="menu-right">Search Bids</span>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button mat-stroked-button color="primary" routerLink="/logout" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}" (click)="signOut($event)" >
+        <mat-icon>logout</mat-icon>
+        <span class="menu-right">Log Out</span>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
